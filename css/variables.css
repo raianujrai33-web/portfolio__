@@ -1,0 +1,51 @@
+/* ===== DESIGN TOKENS — DRY ===== */
+:root {
+  /* Brand */
+  --accent: #6366f1;
+  --accent-2: #ec4899;
+  --gradient: linear-gradient(135deg, var(--accent), var(--accent-2));
+
+  /* Typography */
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-head: 'Space Grotesk', system-ui, sans-serif;
+
+  /* Spacing / radius */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --radius: 1rem;
+  --radius-sm: 0.5rem;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 0.4s;
+  --maxw: 1140px;
+}
+
+/* Dark theme (default) */
+[data-theme="dark"] {
+  --bg: #0a0a0f;
+  --bg-2: #12121a;
+  --surface: #181822;
+  --surface-hover: #1f1f2e;
+  --text: #f1f1f6;
+  --text-muted: #9a9ab0;
+  --border: rgba(255,255,255,0.08);
+  --shadow: 0 20px 50px rgba(0,0,0,0.5);
+  --glow: 0 0 40px rgba(99,102,241,0.25);
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg: #fafafa;
+  --bg-2: #f1f1f5;
+  --surface: #ffffff;
+  --surface-hover: #f5f5fb;
+  --text: #111118;
+  --text-muted: #5a5a6e;
+  --border: rgba(0,0,0,0.08);
+  --shadow: 0 20px 50px rgba(0,0,0,0.08);
+  --glow: 0 0 40px rgba(99,102,241,0.12);
+}
